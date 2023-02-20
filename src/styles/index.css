@@ -1,0 +1,502 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
+.container {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.title {
+  color: #4669f9;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+/*header*/
+
+header {
+  width: 100%;
+  height: 600px;
+  background: #1d00ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsla(0, 60%, 52%, 0.664), hsla(240, 95%, 50%, 0.459)), url(../img/fondo3.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(0, 60%, 52%, 0.664), hsla(240, 95%, 50%, 0.459)), url(../img/fondo3.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/*menu */
+.menu {
+  background-color: #efefef;
+  color: #252525;
+  height: 70px;
+}
+
+.menu_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.logotipo1 {
+  width: 100px;
+}
+
+.menu_links {
+  height: 100%;
+  transition: transform .5s;
+  display: flex;
+}
+
+.menu_items {
+  list-style: none;
+  position: relative;
+  height: 100%;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+.menu_items:hover {
+  animation: bounce 0.3s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+  animation-iteration-count: infinite;
+}
+
+.menu_link {
+  color: #252525;
+  text-decoration: none;
+  padding: 10px 30px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  margin-top: 0.5em;
+  padding-bottom: 1.2rem;
+}
+
+.menu_link:hover {
+  background-color: #ccc;
+  background: -webkit-linear-gradient(to right, #ff0000, #3259cd);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff0000, #3259cd);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+}
+
+.menu_hamburguer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu_img {
+  display: block;
+  width: 36px;
+}
+
+header .text-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text-header h1 {
+  font-size: 50px;
+  color: #fff
+}
+
+.text-header h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+
+}
+
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+}
+
+@media (min-height: 580px) and (max-height: 657px) {
+  header {
+    height: 600px;
+  }
+}
+
+/*About us*/
+
+.container-about-us {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagen-about-us {
+  margin-top: 2em;
+  margin-right: 20px;
+  padding: 30px 20px 100px 20px;
+  width: 500px;
+  height: 550px;
+}
+
+
+.title h2 {
+  color: #4669f9;
+  padding-top: 4rem;
+  font-weight: bold;
+  text-align: justify;
+}
+
+
+.content-text h3 {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  color: #4669f9;
+}
+
+.content-text h3 span {
+  background: #252525;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding-bottom: 2rem;
+  box-shadow: 0 0 6px 0 pink;
+  margin-right: 5px;
+}
+
+.content-text p {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+@media (min-width: 650px) and (max-width: 868px) {
+  .imagen-about-us {
+    padding-top: 5vh;
+    margin-top: 10em;
+    margin-right: 20px;
+    padding-left: 10px;
+    width: 310px;
+    height: 450px;
+  }
+}
+
+/*galeria*/
+
+.actions {
+  background: #efefef;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+}
+
+.galeria-port {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.imagen-port {
+  width: 24%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+}
+
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: hsla(240, 98%, 50%, 0.7);
+  transition: transform .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hover-galeria img {
+  width: 50px;
+}
+
+.hover-galeria p {
+  color: #fff;
+}
+
+.imagen-port:hover .hover-galeria {
+  transform: scale(1);
+}
+
+
+
+
+/*Testimonios*/
+
+.cards {
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5vh;
+  margin: 4rem;
+}
+
+.cards .card1 {
+  background: #4669f9;
+  display: flex;
+  height: 230px;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 6px 0 #5f4cf3;
+  margin-top: 20px;
+  transition-duration: 1s;
+  
+
+}
+
+
+
+.cards .card1 img {
+  width: 110px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
+  transition-duration: 2s;
+  margin-left: 10px;
+}
+
+
+.cards .card1 img:hover {
+  transform: scale(1.15);
+}
+
+.cards .card1 h4 {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.cards .card1>.content-text-card {
+  width: 80%;
+  color: #fff;
+  margin-right: 2vw;
+}
+
+.cards .card1>.content-text-card p {
+  font-weight: 300;
+  font-size: 1rem;
+  padding-top: 5px;
+  padding-left: 25px;
+}
+
+/*Responsive cards*/
+
+/*@media (min-width: 480px) and (max-width: 768px){
+  .cards {
+    display: grid;
+    grid-auto-rows: 22rem;
+    grid-template-rows: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    padding-bottom: 80px;
+  }
+
+  .cards .card{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    padding-left: 5px;
+    transition-duration: 1s;
+  }
+  .cards .card img{
+    width: 135px;
+    height: 115px;
+    object-fit: cover;
+    display: block;
+    transition-duration: 2s;
+    margin-left: 10px;
+}
+
+.cards .card h4{
+  font-size: 1.4rem;
+}
+.cards .card > .content-text-card{
+    width: 80%;
+    margin-right: 1rem;
+}
+.cards .card > .content-text-card p{
+    font-weight: 300;
+    font-size: 1rem;
+}
+}
+}
+*/
+/* Footer*/
+
+footer {
+  background: #efefef;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+  border-top: 1px solid #252525;
+}
+
+.container-footer {
+  width: 90%;
+  padding-bottom: 50px;
+  border-bottom: 1px dashed #252525;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-foo {
+  text-align: center;
+  padding: 10px;
+}
+
+.escu {
+  color: #bf0000;
+}
+
+.chamos {
+  color: blue;
+}
+
+.content-foo h4 {
+  color: #252525;
+  border-bottom: 3px solid #062ab9;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.content-foo a {
+  color: #303030;
+  text-decoration: none;
+}
+
+.content-foo a:hover {
+  background: -webkit-linear-gradient(to right, #ff0000, #3259cd);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff0000, #3259cd);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.title-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #303030;
+}
+
+/*@media (min-width: 480px) and (max-width: 768px){
+  .container-footer {
+    display: grid;
+    grid-auto-rows: 22rem;
+    grid-template-rows: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    padding-bottom: 80px;
+  }
+
+  .content-foo{
+  text-align: center;
+     padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+
+.content-foo h4{
+    padding-bottom: 2px;
+    margin-bottom: 1px;
+}
+}*/
