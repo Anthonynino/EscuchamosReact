@@ -1,14 +1,11 @@
-{/* Comentario para probar el push */}
-
-{/* Comentario para probar el push 23 */}
+//Aqui los comentarios no necesitan las llaves '{ }'
 export const Testimony = () => {
   return (
-    
         <div class="testimonios container-fluid">
 			<h2 class="title mt-5">Nuestros programas y servicios</h2>
 			<div class="cards row">
 				<div class="card1 rightsc col-12 col-lg-6 border ">
-					<img src="img/lucy.jpg"></img>
+					<img alt="" src="img/lucy.jpg"></img>
 					<div class="content-text-card">
 						<h4>Programa Lucy</h4>
 						<p>
@@ -19,7 +16,7 @@ export const Testimony = () => {
 				</div>
 
 				<div class="card1 leftsc col-12 col-lg-6 border">
-					<img src="img/escuela-de-radio.jpg"></img>
+					<img alt="" src="img/escuela-de-radio.jpg"></img>
 					<div class="content-text-card">
 						<h4>Escuela de comunicacion comunitaria y ciudadana</h4>
 						<p>
@@ -32,7 +29,7 @@ export const Testimony = () => {
 
 
 				<div class="card1 rightsc col-12 col-lg-6 border " id="talent">
-					<img src="img/talento.jpg"></img>
+					<img alt="" src="img/talento.jpg"></img>
 					<div class="content-text-card">
 						<h4>Somos talento</h4>
 						<p>
@@ -44,7 +41,7 @@ export const Testimony = () => {
 				</div>
 
 				<div class="card1 leftsc col-12 col-lg-6 border">
-					<img src="img/comunidad.jpg"></img>
+					<img alt="" src="img/comunidad.jpg"></img>
 					<div class="content-text-card">
 						<h4>Trabajo por mi comunidad</h4>
 						<p>

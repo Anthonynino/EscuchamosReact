@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, AboutUs, Galery, Testimony, Footer } from '../Components/index';
+import { Header, AboutUs, Galery, Testimony, Footer } from '../components/index';
 
 export const EscuchamosReact = () => {
   return (
