@@ -1,5 +1,5 @@
 
-import logotipo from "../img/logo.png"
+import logotipo from "../../img/logo.png"
 
 export const NavLinks = () => {
   return (

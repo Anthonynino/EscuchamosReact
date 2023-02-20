@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLinks } from './NavLinks'
+import { NavLinks } from '../NavLinks/NavLinks'
 
 export const Header = () => {
   return (
@@ -10,8 +10,6 @@ export const Header = () => {
 			<h1>Iniciativa de comunicación</h1>
 			<h2>para la promoción social</h2>
 		</section>
-
-	
 
 	</header>
   )

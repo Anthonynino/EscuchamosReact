@@ -1,6 +1,6 @@
 import React from 'react';
 
-import radio from "../img/radio.png"
+import radio from "../../img/radio.png"
 
 export const AboutUs = () => {
   return (
@@ -13,7 +13,7 @@ export const AboutUs = () => {
                 </div>
 				<div className="content-text col-12 col-lg-6 row">
 					<div className="rightsc col-12">
-						<h3><span className='numbers'>1</span>Objetivo</h3>
+						<h3><span >1</span>Objetivo</h3>
 						<p>Es una iniciativa vinculada a la educomunicación desde la perspectiva de la comunicación para
 							el desarrollo, que busca promover entre las comunidades la implicación para el abordaje de
 							sus problemáticas valiéndose de mecanismos para el análisis de su realidad y herramientas
