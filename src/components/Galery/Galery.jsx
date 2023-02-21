@@ -14,7 +14,7 @@ export const Galery = () => {
 					<div className="grid-item wide bottomsc" style={{backgroundImage: `url("http://localhost:3000/img/photo7.jpg")`}}></div>
 	
                     <div className="grid-item rightsc" style={{backgroundImage: `url("http://localhost:3000/img/prueba10.jpg")`}}></div>
-					
+                    
                     <div className="grid-item bottomsc" style={{backgroundImage: `url("http://localhost:3000/img/photo8.jpg")`}}></div>
 					
                     <div className="grid-item bottomsc" style={{backgroundImage: `url("http://localhost:3000/img/photo9.jpg")`}}></div>
