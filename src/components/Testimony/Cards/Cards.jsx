@@ -1,7 +1,7 @@
 import React from 'react'
 import { CardIitem } from '../CardIitem';
 
-let card = [{
+const card = [{
     id: 1,
     title: "Programa Lucy",
     img:"img/lucy.jpg",

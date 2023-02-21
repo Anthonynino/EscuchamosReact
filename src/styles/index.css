@@ -379,46 +379,8 @@ header .text-header {
   padding-left: 25px;
 }
 
-/*Responsive cards*/
 
-/*@media (min-width: 480px) and (max-width: 768px){
-  .cards {
-    display: grid;
-    grid-auto-rows: 22rem;
-    grid-template-rows: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    padding-bottom: 80px;
-  }
 
-  .cards .card{
-    width: 100%;
-    height: 300px;
-    border-radius: 5px;
-    padding-left: 5px;
-    transition-duration: 1s;
-  }
-  .cards .card img{
-    width: 135px;
-    height: 115px;
-    object-fit: cover;
-    display: block;
-    transition-duration: 2s;
-    margin-left: 10px;
-}
-
-.cards .card h4{
-  font-size: 1.4rem;
-}
-.cards .card > .content-text-card{
-    width: 80%;
-    margin-right: 1rem;
-}
-.cards .card > .content-text-card p{
-    font-weight: 300;
-    font-size: 1rem;
-}
-}
-}
-*/
 /* Footer*/
 
 footer {
@@ -481,22 +443,48 @@ footer {
   color: #303030;
 }
 
-/*@media (min-width: 480px) and (max-width: 768px){
-  .container-footer {
-    display: grid;
-    grid-auto-rows: 22rem;
-    grid-template-rows: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    padding-bottom: 80px;
-  }
-
-  .content-foo{
-  text-align: center;
-     padding-bottom: 2px;
-    margin-bottom: 2px;
+/*Form*/
+.container-father{
+  background-color: #4669f9;
 }
 
-.content-foo h4{
-    padding-bottom: 2px;
-    margin-bottom: 1px;
+.container-son{
+  background-color: #fff;
+  height: 44rem;
+  margin: 1rem;
 }
-}*/
+
+.container-input{
+  width: 20rem;
+  height: 8rem;
+  background-color: #efefef;
+  padding-top: 1rem;
+  border-radius: 1.2rem;
+  border: #ccc 2px solid;
+}
+
+.container-input-text{
+  width: 20rem;
+  height: 16rem;
+  background-color: #efefef;
+  padding-top: 1rem;
+  border-radius: 1.2rem;
+  border: #ccc 2px solid;
+}
+
+.form-control{
+  height: 4rem;
+}
+
+.form-text{
+  height: 12rem;
+}
+
+.imagen-contact {
+  margin-right: 20px;
+  padding: 20px 20px 100px 20px;
+  width: 500px;
+  height: 550px;
+}
+
+

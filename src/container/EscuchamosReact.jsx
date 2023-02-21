@@ -1,18 +1,20 @@
 import React from 'react';
-import { Header, AboutUs, Galery, Testimony, Footer } from '../Components/index';
+import { Header, AboutUs, Galery, Testimony, Footer, FormContact } from '../Components/index';
 
 export const EscuchamosReact = () => {
   return (
     <>
-    <Header />
+   <Header /> 
 
-    <AboutUs/>
+  <AboutUs/> 
 
-    <Galery/>
+  <Galery/> 
 
-    <Testimony/>
+  <Testimony/> 
 
-    <Footer/>
+  <Footer/> 
+
+   {/*<FormContact/> */} 
     </>
   )
 }
